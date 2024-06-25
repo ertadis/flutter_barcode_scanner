@@ -3,7 +3,7 @@ version '1.0-SNAPSHOT'
 
 buildscript {
     ext {
-        agp_version = '8.5.0'
+        agp_version = '8.0.0'
     }
     repositories {
         google()
@@ -26,7 +26,7 @@ apply plugin: 'com.android.library'
 
 android {
     namespace 'com.amolg.flutterbarcodescanner'
-    compileSdk 34
+    compileSdk 33
 
     defaultConfig {
         minSdk 21
@@ -37,8 +37,8 @@ android {
         disable 'InvalidPackage'
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_17
-        targetCompatibility JavaVersion.VERSION_17
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
 }
 
